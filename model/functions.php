@@ -13,9 +13,6 @@ var_dump('セッションIDは:',$_COOKIE['PHPSESSID']);
 function loginCheck(){
     if(isset($_SESSION["user"])){
         //セッション情報を取得
-        var_dump($_SESSION["user"]);
-        var_dump($_SESSION["mail"]);
-        var_dump($_SESSION["password"]);
     }else{
         //home.phpに遷移
         header('Location: ./index.php');
